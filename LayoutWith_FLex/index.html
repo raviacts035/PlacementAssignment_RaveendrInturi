@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Page Layout with Flex</Title>
+        <style>
+            *{
+                padding: 0 0;
+                margin: 0 0;
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                gap: 40px;
+                padding: 40px 40px;
+                background-color: aqua;
+                color: whitesmoke;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            header{
+                background-color: cadetblue;
+                display: flex;
+                justify-content: center;
+                padding: 15px 0;
+                width: 100%;
+                margin:auto;
+            }
+            header h2{
+                font-size: 25px;
+            }
+            main{
+                display: flex;
+                justify-content: space-between;
+                height: 80vh;
+            }
+            aside{
+                background-color:green;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+                text-align: center;
+                height: 100%;
+            }
+            article{
+                width: 60%;
+                box-sizing: border-box;
+                height: 100%;
+                padding: 10px 10px;
+                background-color: orange;
+                display: flex;
+                flex-direction: column;
+                justify-content:end;
+                text-align: center;
+            }
+            .img-Group{
+                display:flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                align-items:center;
+                gap: 5px;
+            }
+            .img-Group div{
+                background-color: yellow;
+                padding: 60px 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Header</h2>
+        </header>
+        <main>
+            <!-- Left Side -->
+            <aside><h3>Aside</h3></aside>
+            <!-- Right Side -->
+            <article>
+                <div>Article</div>
+                <div class="img-Group">
+                    <div>Image</div>
+                    <div>Image</div>
+                    <div>Image</div>
+            </article>
+        </main>
+    </body>
+</html>

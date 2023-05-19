@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Periodic Table </title>
+        <style>
+            td {
+            border: 4px solid #333;
+            border-style: outset;
+            padding: 5px 15px;
+            }
+            table{
+                border-spacing: 5px;
+            }
+            h2{
+                background-color: aqua;
+            }
+            body{
+                color: black;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            section{
+                font-weight: bold;
+                display: flex;
+                flex-direction:column;
+                align-items:center;
+            }
+            .rOne td{
+                background-color: rgb(233, 92, 92);
+            }
+            .bottom1 td{
+                background-color:greenyellow;
+            }
+            .rTwo td:nth-child(-n+3){
+                background-color: rgb(233, 92, 92);
+            }
+            .rTwo td:nth-child(n+6){
+                background-color: yellow;
+            }
+            .rThree td:nth-child(n+15){
+                background-color:yellow;
+            }
+            .rThree td:nth-child(-n+14){
+                background-color: blueviolet;
+            }
+            .rThree td:nth-child(2){
+                background-color: rgb(233, 92, 92);
+            }
+            .rThree td:nth-child(3){
+                background-color: rgb(233, 92, 92);
+            }
+        </style>
+    </head>
+    <body>
+        <Section>
+            <h2>This is Periodic Table</h2>
+            <table>
+                <tr>
+                    <th>Group</br>Period</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th></th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                </tr>
+                <tr class="rOne">
+                    <th>1</th>
+                    <td>1<br/>H</td>
+                    <th></th>
+                    <th colspan="16"></th>
+                    <td>2<br/>He</td>
+                </tr>
+                <tr class="rTwo">
+                    <th>2</th>
+                    <td>3<br/>Li</td>
+                    <td>4<br/>Be</td>
+                    <th></th>
+                    <th colspan="10"></th>
+                    <td>5<br/>B</td>
+                    <td>6<br/>C</td>
+                    <td>7<br/>N</td>
+                    <td>8<br/>O</td>
+                    <td>9<br/>F</td>
+                    <td>10<br/>Ne</td>
+                </tr>
+                <tr class="rTwo">
+                    <th>3</th>
+                    <td>11<br/>Na</td>
+                    <td>12<br/>Mg</td>
+                    <th></th>
+                    <th colspan="10"></th>
+                    <td>13<br/>Ai</td>
+                    <td>14<br/>Si</td>
+                    <td>15<br/>P</td>
+                    <td>16<br/>S</td>
+                    <td>17<br/>Cl</td>
+                    <td>18<br/>Ar</td>
+                </tr>
+                <tr class="rThree">
+                    <th>4</th>
+                    <td>19<br/>K</td>
+                    <td>20<br/>Ca</td>
+                    <th></th>
+                    <td >21<br/>Sc</td>
+                    <td>22<br/>Ti</td>
+                    <td>23<br/>V</td>
+                    <td>24<br/>Cr</td>
+                    <td>25<br/>Mn</td>
+                    <td>26<br/>Fe</td>
+                    <td>27<br/>Co</td>
+                    <td>28<br/>Ni</td>
+                    <td>29<br/>Cu</td>
+                    <td>30<br/>Zn</td>
+                    <td>31<br/>Ga</td>
+                    <td>32<br/>Ge</td>
+                    <td>33<br/>As</td>
+                    <td>34<br/>Se</td>
+                    <td>35<br/>Br</td>
+                    <td>36<br/>Kr</td>
+                </tr>
+                <tr class="rThree">
+                    <th>5</th>
+                    <td>37<br/>Rb</td>
+                    <td>38<br/>Sr</td>
+                    <th></th>
+                    <td>39<br/>Y</td>
+                    <td>40<br/>Zr</td>
+                    <td>41<br/>Nb</td>
+                    <td>42<br/>Mo</td>
+                    <td>43<br/>Tc</td>
+                    <td>44<br/>Ru</td>
+                    <td>45<br/>Rh</td>
+                    <td>46<br/>Pd</td>
+                    <td>47<br/>Ag</td>
+                    <td>48<br/>Cd</td>
+                    <td>49<br/>In</td>
+                    <td>50<br/>Sn</td>
+                    <td>51<br/>Sb</td>
+                    <td>52<br/>Te</td>
+                    <td>53<br/>I</td>
+                    <td>54<br/>Xe</td>
+                </tr>
+                <tr class="rThree">
+                    <th>6</th>
+                    <td>55<br/>Cs</td>
+                    <td>56<br/>Ba</td>
+                    <th>*</th>
+                    <td>71<br/>Lu</td>
+                    <td>72<br/>Hf</td>
+                    <td>73<br/>Ta</td>
+                    <td>74<br/>W</td>
+                    <td>75<br/>Re</td>
+                    <td>76<br/>Os</td>
+                    <td>77<br/>Ir</td>
+                    <td>78<br/>Pt</td>
+                    <td>79<br/>Au</td>
+                    <td>80<br/>Hg</td>
+                    <td>81<br/>Tl</td>
+                    <td>82<br/>Pb</td>
+                    <td>83<br/>Bi</td>
+                    <td>84<br/>Po</td>
+                    <td>85<br/>At</td>
+                    <td>86<br/>Rn</td>
+                </tr>
+                <tr class="rThree">
+                    <th>7</th>
+                    <td>87<br/>Fr</td>
+                    <td>88<br/>Ra</td>
+                    <th>**</th>
+                    <td>103<br/>Lr</td>
+                    <td>104<br/>Rf</td>
+                    <td>105<br/>Db</td>
+                    <td>106<br/>Sg</td>
+                    <td>107<br/>Bh</td>
+                    <td>108<br/>Hs</td>
+                    <td>109<br/>Mt</td>
+                    <td>110<br/>Ds</td>
+                    <td>111<br/>Rg</td>
+                    <td>112<br/>Cn</td>
+                    <td>113<br/>Nh</td>
+                    <td>114<br/>Fl</td>
+                    <td>115<br/>Mc</td>
+                    <td>116<br/>Lv</td>
+                    <td>117<br/>Ts</td>
+                    <td>118<br/>Og</td>
+                </tr>
+                <tr> </tr>
+                <tr class="bottom1">
+                    <th colspan="3"></th>
+                    <th>*</th>
+                    <td>57<br/>La</td>
+                    <td>58<br/>Ce</td>
+                    <td>59<br/>Pr</td>
+                    <td>60<br/>Nd</td>
+                    <td>61<br/>Pm</td>
+                    <td>62<br/>Sm</td>
+                    <td>63<br/>Eu</td>
+                    <td>64<br/>Gd</td>
+                    <td>65<br/>Tb</td>
+                    <td>66<br/>Dy</td>
+                    <td>67<br/>Ho</td>
+                    <td>68<br/>Er</td>
+                    <td>69<br/>Tm</td>
+                    <td>70<br/>Yb</td>
+                    <th colspan="2"></th>
+                </tr>
+                <tr class="bottom1">
+                    <th colspan="3"></th>
+                    <th>**</th>
+                    <td>89<br/>Ac</td>
+                    <td>90<br/>Th</td>
+                    <td>91<br/>Pa</td>
+                    <td>92<br/>U</td>
+                    <td>93<br/>Np</td>
+                    <td>94<br/>Pu</td>
+                    <td>95<br/>Am</td>
+                    <td>96<br/>Cm</td>
+                    <td>97<br/>Bk</td>
+                    <td>98<br/>Cf</td>
+                    <td>99<br/>Es</td>
+                    <td>100<br/>Fm</td>
+                    <td>101<br/>Md</td>
+                    <td>102<br/>No</td>
+                    <th colspan="2"><br/></th>
+                </tr>
+            </table>
+        </Section>
+        <!-- <td><br/></td> -->
+    </body>
+</html>
