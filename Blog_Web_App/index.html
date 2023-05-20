@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Web App</title>
 </head>
-<body>
-    <nav>
+<body style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <nav class="flex text-red-500 z-99 sticky top-0 shadow-2xl text-xl items-center justify-between px-[10vw] py-6">
         <div>qBlog's</div>
-        <ul>
+        <ul class="flex flex-wrap collapse lg:visible lg:gap-8">
             <a href="#">Home</a>
             <a href="#">Download</a>
             <a href="#">About Us</a>
             <a href="#">Contact Us</a>
         </ul>
-        <button>Add Post</button>
+        <button value="Hello" class="rounded-lg bg-red-500 text-white py-1 px-6">Add Post</button>
     </nav>
-    <main>
-
+    <main class="mx-[10vw] border-2 border-red-400 z-0">
+        <section id="creatorBox" hidden>
+            <input type="text" placeholder="Title Here..." name="title" id="title" required>
+            <textarea class="border-2" placeholder="Start Typing here..." name="body" id="bodyX" cols="30" rows="10" required></textarea>
+            <button onclick="createNewPost()">Post</button>
+        </section>
+        <ul class="flex flex-col gap-8" id="postContainer">
+            <div class="border-2 p-4 z-0 rounded-xl">
+                <h3 class="text-3xl">This is Title</h3>
+            </div>
+        </ul>
     </main>
 </body>
+<script src="./app.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </html>
