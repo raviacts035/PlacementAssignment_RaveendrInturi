@@ -1,0 +1,17 @@
+{
+  "name": "placementassignment_raveendrinturi",
+  "version": "1.0.0",
+  "description": "All the Assignment Project's FSJS2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "HTML",
+    "CSS",
+    "FSJS2.0"
+  ],
+  "author": "Raveendra Inturi",
+  "license": "ISC"
+}

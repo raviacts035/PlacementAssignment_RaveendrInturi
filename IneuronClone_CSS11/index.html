@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shortcut icon"
+      href="./assets/download.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/28743d4eee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Clone Ineuron PPT assignment</title>
+</head>
+<body>
+    <!-- navbar -->
+    <header
+      class="justify-between items-center py-6 w-full sticky top-0 bg-[#fff] z-[20] xl:flex-col xl:justify-around xl:w-[90%] mx-auto overflow-x-hidden xl:bg-transparent xl:static"
+    >
+      <!-- hamburger -->
+
+      <input type="checkbox" id="bars" class="peer hidden" />
+      <label
+        for="bars"
+        class="px-4 py-3 cursor-pointer md:px-6 lg:px-8 xl:hidden"
+      >
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </label>
+
+      <!-- logo -->
+      <img
+        src="./assets/ineuron-logo.png"
+        alt="ineuron-logo"
+        class="w-32 absolute top-5 left-32 flex flex-row justify-center md:inset-x-1/2 xl:w-40 xl:inset-x-auto"
+      />
+
+      <!-- search field -->
+      <div
+        class="hidden xl:flex items-center gap-2 text-[#233c7b] border border-[#000] rounded-lg w-[55%] px-4 py-2 text-[16px] absolute inset-x-80"
+      >
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          class="outline-none border-none text-[#233c7b]"
+          type="text"
+          placeholder="What do you want learn?"
+        />
+      </div>
+      <!-- button -->
+      <div class="hidden xl:flex gap-1 relative inset-3/4 top-1 px-10">
+        <button
+          class="text-[#233c7b] text-base border-none font-semibold cursor-pointer px-8 py-1.5 rounded-md"
+        >
+          Sign up
+        </button>
+        <button
+          class="bg-[#233c7b] text-[#fff] font-semibold text-base cursor-pointer px-8 py-1.5 rounded-md"
+        >
+          Sign in
+        </button>
+      </div>
+      <!-- search -->
+      <i
+        class="fa-solid fa-magnifying-glass fa-xl px-4 py-3 absolute right-2 cursor-pointer md:px-6 lg:px-8 xl:hidden"
+      ></i>
+
+      <nav
+        class="hidden peer-checked:flex flex-col xl:flex xl:justify-center xl:items-center xl:pt-4"
+      >
+        <ul
+          class="w-full flex flex-col xl:flex-row xl:justify-center xl:items-center"
+        >
+          <li
+            class="px-5 py-3 text-[#000] text-lg cursor-pointer md:px-6 lg:px-8 xl:px-8 xl:text-[17px] text-[#233c7b] font-semibold"
+          >
+            Courses
+          </li>
+          <div class="border border-[#233c7b] w-[95%] mx-auto xl:hidden"></div>
+          <li
+            class="px-5 py-3 text-[#000] text-lg cursor-pointer md:px-6 lg:px-8 xl:px-8 xl:text-[17px] text-[#233c7b] font-semibold"
+          >
+            One Neuron
+          </li>
+          <div class="border border-[#233c7b] w-[95%] mx-auto xl:hidden"></div>
+
+          <li
+            class="px-5 py-3 text-[#000] text-lg cursor-pointer md:px-6 lg:px-8 xl:px-8 xl:text-[17px] text-[#233c7b] font-semibold"
+          >
+            Neuro Lab
+          </li>
+          <div class="border border-[#233c7b] w-[95%] mx-auto xl:hidden"></div>
+
+          <li
+            class="px-5 py-3 text-[#000] text-lg cursor-pointer md:px-6 lg:px-8 xl:px-8 xl:text-[17px] text-[#233c7b] font-semibold"
+          >
+            Job Portal
+          </li>
+          <div class="border border-[#233c7b] w-[95%] mx-auto xl:hidden"></div>
+
+          <li
+            class="px-5 py-3 text-[#000] text-lg cursor-pointer md:px-6 lg:px-8 xl:px-8 xl:text-[17px] text-[#233c7b] font-semibold"
+          >
+            Internship Portal
+          </li>
+          <div class="border border-[#233c7b] w-[95%] mx-auto xl:hidden"></div>
+
+          <li
+            class="px-5 py-3 text-[#000] text-lg cursor-pointer md:px-6 lg:px-8 xl:px-8 xl:text-[17px] text-[#233c7b] font-semibold"
+          >
+            Became an affiliate
+          </li>
+          <div class="border border-[#233c7b] w-[95%] mx-auto xl:hidden"></div>
+
+          <li
+            class="px-5 py-3 text-[#000] text-lg cursor-pointer md:px-6 lg:px-8 xl:px-8 xl:text-[17px] text-[#233c7b] font-semibold"
+          >
+            Hall of fame
+          </li>
+          <div class="border border-[#233c7b] w-[95%] mx-auto xl:hidden"></div>
+
+          <li
+            class="px-5 py-3 text-[#000] text-lg cursor-pointer md:px-6 lg:px-8 xl:px-8 xl:text-[17px] text-[#233c7b] font-semibold"
+          >
+            Company
+          </li>
+          <div class="border border-[#233c7b] w-[95%] mx-auto xl:hidden"></div>
+        </ul>
+        <div
+          class="flex flex-col gap-3 mt-5 w-[90%] mx-auto md:flex-row xl:hidden"
+        >
+          <button
+            class="w-[80%] mx-auto bg-[#233c7b] text-[#fff] font-semibold text-[16px] py-3 rounded-lg md:w-[50%]"
+          >
+            Sign In
+          </button>
+          <button
+            class="w-[80%] mx-auto border border-[#233c7b] text-[#233c7b] font-semibold text-[16px] py-3 rounded-lg md:w-[50%]"
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Body Start's -->
+    <div class="relative w-[full]">
+        <div class="slide relative w-[100%] h-[100%]">
+          <img
+            class="w-full h-[80vh] object-cover md:hidden"
+            src="./assets/mobile1.png"
+          />
+  
+          <img
+            class="hidden md:block md:h-[90vh] md:max-w-full md:object-cover xl:object-contain xl:w-full"
+            src="./assets/web.png"
+            alt="image description"
+          />
+        </div>
+  
+        <div class="slide relative">
+          <!-- <img class="w-full h-[80vh] object-cover" src="./assets/web1.png" /> -->
+          <img
+            class="w-full h-[80vh] object-cover md:hidden"
+            src="./assets/mobile2.png"
+          />
+  
+          <img
+            class="hidden md:block md:h-[90vh] md:max-w-full md:object-cover xl:object-contain"
+            src="./assets/web1.png"
+            alt="image description"
+          />
+        </div>
+  
+        <div class="slide relative">
+          <!-- <img class="w-full h-[80vh] object-cover" src="./assets/web3.png" /> -->
+          <img
+            class="w-full h-[full] object-cover md:hidden"
+            src="./assets/mobile3.png"
+          />
+  
+          <img
+            class="hidden md:block md:h-[90vh] md:max-w-full md:object-cover xl:object-contain"
+            src="./assets/web3.png"
+            alt="image description"
+          />
+        </div>
+  
+        <!-- The previous button -->
+        <a
+          class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+          onclick="moveSlide(-1)"
+          >❮</a
+        >
+  
+        <!-- The next button -->
+        <a
+          class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+          onclick="moveSlide(1)"
+          >❯</a
+        >
+      </div>
+      <br />
+  
+      <!-- The dots -->
+      <div
+        class="flex justify-center items-center space-x-5 absolute bottom-[80px] left-40 md:bottom-[20px] md:left-80 lg:inset-x-96 xl:inset-y-full xl:inset-x-80"
+      >
+        <div
+          class="dot w-4 h-4 rounded-full cursor-pointer"
+          onclick="currentSlide(1)"
+        ></div>
+        <div
+          class="dot w-4 h-4 rounded-full cursor-pointer"
+          onclick="currentSlide(2)"
+        ></div>
+        <div
+          class="dot w-4 h-4 rounded-full cursor-pointer"
+          onclick="currentSlide(3)"
+        ></div>
+      </div>
+      <!-- No Hardwork -->
+      <div class="px-10 pt-14">
+        <!-- text -->
+        <div class="flex flex-col justify-center items-center">
+          <p
+            class="text-2xl text-[#233c7b] text-center md:text-3xl md:text-center xl:text-5xl font-bold"
+          >
+            "Pure Hardwork,No Shortcuts!"
+          </p>
+          <div class="border-2 border-orange-600 rounded-lg w-[10%] mt-3"></div>
+        </div>
+        <!-- img -->
+        <div
+          class="flex flex-col lg:flex-row justify-around items-center gap-7 py-14"
+        >
+          <!-- img1 -->
+          <div class="flex flex-col items-center justify-center text-[#233c7b]">
+            <img src="./assets/books-icon.svg" alt="books" class="w-44" />
+            <p class="text-3xl lg:text-4xl font-bold py-6">300+</p>
+            <p class="text-2xl md:text-3xl xl:text-3xl font-bold text-[#454545]">
+              Different Courses
+            </p>
+          </div>
+          <!-- img2 -->
+          <div class="flex flex-col items-center justify-center text-[#233c7b]">
+            <img src="./assets/student-iocn.svg" alt="student" class="w-44" />
+            <p class="text-3xl lg:text-4xl font-bold py-6">4,00,000+</p>
+            <p class="text-2xl md:text-3xl xl:text-3xl font-bold text-[#454545]">
+              Students Enrolled
+            </p>
+          </div>
+          <!-- img3 -->
+          <div class="flex flex-col items-center justify-center text-[#233c7b]">
+            <img
+              src="./assets/credit-card-icon.svg"
+              alt="credit card"
+              class="w-44"
+            />
+            <p class="text-3xl lg:text-4xl font-bold py-6">10,000+</p>
+            <p class="text-2xl md:text-3xl xl:text-3xl font-bold text-[#454545]">
+              Successful Transactions
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Achievers -->
+      <div class="bg-[#eef0f5]">
+        <div class="flex flex-col justify-center items-center pt-14 pb-14 mx-40">
+          <div>
+            <p
+              class="text-2xl font-bold text-[#233c7b] pt-10 pb-28 md:text-3xl xl:text-4xl"
+            >
+              Our Achiever's Work with
+            </p>
+          </div>
+  
+          <div class="flex flex-row overflow-hidden">
+            <div class="flex flex-row justify-around items-center">
+              <div class="flex flex-row item">
+                <img
+                  class="w-48 lg:64"
+                  src="./assets/Inferenz.png"
+                  alt="inferenz"
+                />
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/infogain.png"
+                  alt="infogain"
+                />
+                <!-- <img class="w-56 p-8 lg:64" src="./assets/juntran.png" alt="juntran"> -->
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/kaplan.png"
+                  alt="kaplan"
+                />
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/kpmg.png"
+                  alt="kpmg"
+                />
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/kutumb.png"
+                  alt="kutumb"
+                />
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/lennox.png"
+                  alt="lennox"
+                />
+  
+                <img
+                  class="w-48 lg:64"
+                  src="./assets/Inferenz.png"
+                  alt="inferenz"
+                />
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/infogain.png"
+                  alt="infogain"
+                />
+                <!-- <img class="w-56 p-8 lg:64" src="./assets/juntran.png" alt="juntran"> -->
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/kaplan.png"
+                  alt="kaplan"
+                />
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/kpmg.png"
+                  alt="kpmg"
+                />
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/kutumb.png"
+                  alt="kutumb"
+                />
+                <img
+                  class="w-48 mr-[40px] lg:64"
+                  src="./assets/lennox.png"
+                  alt="lennox"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Javascript code -->
+        <script>
+          let slideIndex = 1;
+          showSlide(slideIndex);
+  
+          function moveSlide(moveStep) {
+            showSlide((slideIndex += moveStep));
+          }
+  
+          function currentSlide(n) {
+            showSlide((slideIndex = n));
+          }
+  
+          function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName("dot");
+  
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+  
+            for (i = 0; i < slides.length; i++) {
+              slides[i].classList.add("hidden");
+            }
+  
+            for (i = 0; i < dots.length; i++) {
+              dots[i].classList.remove("bg-yellow-500");
+              dots[i].classList.add("bg-green-600");
+            }
+  
+            slides[slideIndex - 1].classList.remove("hidden");
+  
+            dots[slideIndex - 1].classList.remove("bg-green-600");
+            dots[slideIndex - 1].classList.add("bg-yellow-500");
+          }
+        </script>
+      </div>
+      <!-- Hall of fame -->
+      <div>
+        <div class="flex flex-col justify-center items-center space-y-4">
+          <!-- text -->
+          <div>
+            <p
+              class="text-3xl font-bold text-[#233c7b] md:text-3xl xl:text-4xl text-center py-20"
+            >
+              Hall of fame
+            </p>
+          </div>
+          <!-- cards -->
+          <div
+            class="flex flex-row justify-center items-center overflow-hidden gap-10"
+          >
+            <!-- card1 -->
+            <div
+              class="flex flex-col cursor-pointer w-[350px] h-[410px] overflow-hidden border shadow-xl rounded-xl px-10 py-5 md:w-[380px]"
+            >
+              <img
+                src="./assets/62d644c4a9f208001abf774a.jpeg"
+                alt="photo"
+                class="w-28 rounded-full mx-auto"
+              />
+              <p class="text-xl font-bold text-[#000] text-center py-1">
+                Shivendra Pratap Shahi
+              </p>
+              <p class="text-base text-[#454545] text-center py-4">
+                Accenture, Technology Education Analyst
+              </p>
+              <p class="text-base md:text-[18px] text-[#454545] text-center">
+                I wanted to express my heartfelt gratitude for your incredible
+                support and guidance throughout my journey into data science.
+              </p>
+              <img
+                src="./assets/linkedin_318-183415.avif"
+                alt="linkedin"
+                class="w-7 mx-auto mt-3"
+              />
+            </div>
+            <!-- card2 -->
+            <div
+              class="hidden flex flex-col cursor-pointer w-[360px] h-[410px] overflow-hidden border shadow-xl rounded-xl px-10 py-5 md:flex md:w-[380px]"
+            >
+              <img
+                src="./assets/62d644c4a9f208001abf774a.jpeg"
+                alt="photo"
+                class="w-28 rounded-full mx-auto"
+              />
+              <p class="text-xl font-bold text-[#000] text-center py-1">
+                Shivendra Pratap Shahi
+              </p>
+              <p class="text-base text-[#454545] text-center py-4">
+                Accenture, Technology Education Analyst
+              </p>
+              <p class="text-base md:text-[18px] text-[#454545] text-center">
+                I wanted to express my heartfelt gratitude for your incredible
+                support and guidance throughout my journey into data science.
+              </p>
+              <img
+                src="./assets/linkedin_318-183415.avif"
+                alt="linkedin"
+                class="w-7 mx-auto mt-3"
+              />
+            </div>
+            <!-- card3 -->
+            <div
+              class="hidden flex flex-col cursor-pointer w-[360px] h-[410px] overflow-hidden border shadow-xl rounded-xl px-10 py-5 lg:flex md:w-[380px]"
+            >
+              <img
+                src="./assets/62d644c4a9f208001abf774a.jpeg"
+                alt="photo"
+                class="w-28 rounded-full mx-auto"
+              />
+              <p class="text-xl font-bold text-[#000] text-center py-1">
+                Shivendra Pratap Shahi
+              </p>
+              <p class="text-base text-[#454545] text-center py-4">
+                Accenture, Technology Education Analyst
+              </p>
+              <p class="text-base md:text-[18px] text-[#454545] text-center">
+                I wanted to express my heartfelt gratitude for your incredible
+                support and guidance throughout my journey into data science.
+              </p>
+              <img
+                src="./assets/linkedin_318-183415.avif"
+                alt="linkedin"
+                class="w-7 mx-auto mt-3"
+              />
+            </div>
+          </div>
+          <!-- view  -->
+          <div>
+            <p class="cursor-pointer text-[#454545] font-bold text-xl py-5">
+              View More
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Live Program -->
+      <div class="py-14">
+        <div class="flex flex-col justify-center items-center pb-12">
+          <p
+            class="text-3xl font-bold text-[#233c7b] py-3 md:text-3xl xl:text-4xl"
+          >
+            Live Program
+          </p>
+          <p
+            class="text-[17px] font-normal text-[#454545] md:text-2xl text-center"
+          >
+            Get your program with live "instructor led" learning.
+          </p>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-row gap-10 justify-center items-center">
+          <!-- card1 -->
+          <div
+            class="flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[400px] w-[360px] md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">
+                Full Stack JavaScript Bootcamp 2.0
+              </p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-10">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  Hitesh Choudhary
+                </p>
+              </div>
+              <div class="flex flex-row justify-between items-center mr-7">
+                <p class="text-lg font-bold"><span>₹</span>17700.00</p>
+                <button
+                  class="text-[#000] text-base font-normal bg-blue-200 px-4 py-1 rounded-md"
+                >
+                  Live
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div
+            class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[400px] w-[360px] md:flex md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">
+                Full Stack JavaScript Bootcamp 2.0
+              </p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-10">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  Hitesh Choudhary
+                </p>
+              </div>
+              <div class="flex flex-row justify-between items-center mr-7">
+                <p class="text-lg font-bold"><span>₹</span>17700.00</p>
+                <button
+                  class="text-[#000] text-base font-normal bg-blue-200 px-4 py-1 rounded-md"
+                >
+                  Live
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div
+            class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[400px] w-[360px] lg:flex md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">
+                Full Stack JavaScript Bootcamp 2.0
+              </p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-10">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  Hitesh Choudhary
+                </p>
+              </div>
+              <div class="flex flex-row justify-between items-center mr-7">
+                <p class="text-lg font-bold"><span>₹</span>17700.00</p>
+                <button
+                  class="text-[#000] text-base font-normal bg-blue-200 px-4 py-1 rounded-md"
+                >
+                  Live
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- view  -->
+        <div>
+          <p
+            class="cursor-pointer text-[#454545] font-bold text-xl pt-10 text-center"
+          >
+            View More
+          </p>
+        </div>
+      </div>
+      <!-- Affordable Programs -->
+      <div class="py-14">
+        <div class="flex flex-col justify-center items-center pb-12">
+          <p
+            class="text-3xl font-bold text-[#233c7b] py-3 md:text-3xl xl:text-4xl"
+          >
+            Affordable Programs
+          </p>
+          <p
+            class="text-[17px] font-normal text-[#454545] md:text-2xl text-center"
+          >
+            Find your favourite courses in pocket-friendly ways.
+          </p>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-row gap-10 justify-center items-center">
+          <!-- card1 -->
+          <div
+            class="flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[400px] w-[360px] md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh2.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">Dart Language</p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-10">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  Hitesh Choudhary
+                </p>
+              </div>
+              <div>
+                <p class="text-lg font-bold"><span>₹</span>499.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div
+            class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[400px] w-[360px] md:flex md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh2.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">Dart Language</p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-10">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  Hitesh Choudhary
+                </p>
+              </div>
+              <div>
+                <p class="text-lg font-bold"><span>₹</span>499.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div
+            class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[400px] w-[360px] lg:flex md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh2.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">Dart Language</p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-10">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  Hitesh Choudhary
+                </p>
+              </div>
+              <div>
+                <p class="text-lg font-bold"><span>₹</span>499.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- view  -->
+        <div>
+          <p
+            class="cursor-pointer text-[#454545] font-bold text-xl py-5 text-center"
+          >
+            View More
+          </p>
+        </div>
+      </div>
+      <!-- Community Programs -->
+      <div class="py-14">
+        <div class="flex flex-col justify-center items-center pb-12">
+          <p
+            class="text-3xl font-bold text-[#233c7b] py-3 md:text-3xl xl:text-4xl"
+          >
+            Community Programs
+          </p>
+          <p
+            class="text-[17px] font-normal text-[#454545] md:text-2xl text-center"
+          >
+            Open to all pro-live classes on Youtube for free.
+          </p>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-row gap-10 justify-center items-center">
+          <!-- card1 -->
+          <div
+            class="flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[400px] w-[360px] md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh3.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">
+                TypeScript Crash Course
+              </p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-10">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  Hitesh Choudhary
+                </p>
+              </div>
+              <div>
+                <p class="text-lg font-bold">FREE</p>
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div
+            class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[400px] w-[360px] md:flex md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh3.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">
+                TypeScript Crash Course
+              </p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-10">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  Hitesh Choudhary
+                </p>
+              </div>
+              <div>
+                <p class="text-lg font-bold">FREE</p>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div
+            class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[400px] w-[360px] lg:flex md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh3.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">
+                TypeScript Crash Course
+              </p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-10">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  Hitesh Choudhary
+                </p>
+              </div>
+              <div>
+                <p class="text-lg font-bold">FREE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- view  -->
+        <div>
+          <p
+            class="cursor-pointer text-[#454545] font-bold text-xl py-5 text-center"
+          >
+            View More
+          </p>
+        </div>
+      </div>
+      <!-- One Neuron -->
+      <div class="py-14">
+        <div class="flex flex-col justify-center items-center pb-12">
+          <p
+            class="text-3xl font-bold text-[#233c7b] py-3 md:text-3xl xl:text-4xl"
+          >
+            One Neuron
+          </p>
+          <p
+            class="text-[17px] font-normal text-[#454545] md:text-2xl text-center"
+          >
+            New Neurons all day, every day.
+          </p>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-row gap-10 justify-center items-center">
+          <!-- card1 -->
+          <div
+            class="flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[420px] w-[360px] md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh3.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">Tech Neuron</p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-2">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  200+ courses, 500+ projects, raise your demand option,
+                  consistent services from iNeuron, work 1:1 with experts
+                </p>
+              </div>
+              <div>
+                <p class="text-lg font-bold pt-4"><span>₹</span>25000.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div
+            class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[420px] w-[360px] md:flex md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh3.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">
+                TypeScript Crash Course
+              </p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-2">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  200+ courses, 500+ projects, raise your demand option,
+                  consistent services from iNeuron, work 1:1 with experts
+                </p>
+              </div>
+              <div>
+                <p class="text-lg font-bold pt-4"><span>₹</span>25000.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div
+            class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[420px] w-[360px] lg:flex md:w-[380px]"
+          >
+            <!-- upper -->
+            <div>
+              <img src="./assets/hitesh3.jpg" alt="hitesh" class="w-80" />
+              <p class="text-xl font-bold text-[#233c7b] py-1">
+                TypeScript Crash Course
+              </p>
+            </div>
+            <!-- lower -->
+            <div class="flex flex-col gap-3 w-[85%] mt-2">
+              <div>
+                <p class="text-[18px] font-normal text-[#454545]">
+                  200+ courses, 500+ projects, raise your demand option,
+                  consistent services from iNeuron, work 1:1 with experts
+                </p>
+              </div>
+              <div>
+                <p class="text-lg font-bold pt-4"><span>₹</span>25000.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- view  -->
+        <div>
+          <p
+            class="cursor-pointer text-[#454545] font-bold text-xl py-5 text-center"
+          >
+            View More
+          </p>
+        </div>
+      </div>
+    <section class="flex flex-col m-auto items-center p-10">
+        <div class="flex flex-col justify-center items-center pb-12">
+            <p
+              class="text-3xl font-bold text-[#233c7b] py-3 md:text-3xl xl:text-4xl"
+            >
+            Test Series
+            </p>
+            <p
+              class="text-[17px] font-normal text-[#454545] md:text-2xl text-center"
+            >
+            Quiz-based Cources TO prepare for your interviews
+            </p>
+          </div>
+        <div class="flex flex-row gap-10 justify-center items-center">
+            <!-- card1 -->
+            <a href="#"
+              class="flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[420px] w-[360px] md:w-[380px]"
+            >
+              <!-- upper -->
+              <div>
+                <img src="./assets/ProJava_img.jpg" alt="hitesh" class="w-80" />
+                <p class="text-xl font-bold text-[#233c7b] py-1">Tech Neuron</p>
+              </div>
+              <!-- lower -->
+              <div class="flex flex-col gap-3 w-[85%] mt-2">
+                <div>
+                  <p class="text-[18px] font-normal text-[#454545]">
+                    200+ courses, 500+ projects, raise your demand option,
+                    consistent services from iNeuron, work 1:1 with experts
+                  </p>
+                </div>
+                <div>
+                  <p class="text-lg font-bold pt-4"><span>₹</span>25000.00</p>
+                </div>
+              </div>
+            </a>
+            <!-- card2 -->
+            <a href="#"
+              class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[420px] w-[360px] md:flex md:w-[380px]"
+            >
+              <!-- upper -->
+              <div>
+                <img src="./assets/ProC_img.jpg" alt="hitesh" class="w-80" />
+                <p class="text-xl font-bold text-[#233c7b] py-1">
+                  TypeScript Crash Course
+                </p>
+              </div>
+              <!-- lower -->
+              <div class="flex flex-col gap-3 w-[85%] mt-2">
+                <div>
+                  <p class="text-[18px] font-normal text-[#454545]">
+                    200+ courses, 500+ projects, raise your demand option,
+                    consistent services from iNeuron, work 1:1 with experts
+                  </p>
+                </div>
+                <div>
+                  <p class="text-lg font-bold pt-4"><span>₹</span>25000.00</p>
+                </div>
+              </div>
+            </a>
+            <!-- card3 -->
+            <a href="#"
+              class="hidden flex flex-col justify-center items-center cursor-pointer border rounded-xl shadow-xl h-[420px] w-[360px] lg:flex md:w-[380px]"
+            >
+              <!-- upper -->
+              <div>
+                <img src="./assets/JavaInterview_img.jpg" alt="hitesh" class="w-80" />
+                <p class="text-xl font-bold text-[#233c7b] py-1">
+                  TypeScript Crash Course
+                </p>
+              </div>
+              <!-- lower -->
+              <div class="flex flex-col gap-3 w-[85%] mt-2">
+                <div>
+                  <p class="text-[18px] font-normal text-[#454545]">
+                    200+ courses, 500+ projects, raise your demand option,
+                    consistent services from iNeuron, work 1:1 with experts
+                  </p>
+                </div>
+                <div>
+                  <p class="text-lg font-bold pt-4"><span>₹</span>25000.00</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        <div>
+          <p
+            class="cursor-pointer text-[#454545] font-bold text-xl py-5 text-center"
+          >
+            View More
+          </p>
+        </div>
+    </section>
+    <!-- Hackathons We Conducted -->
+    <section class="flex flex-col mx-20 items-center pt-10">
+        <h2 class="text-5xl font-bold text-blue-900 px-4 my-6">Hackathons We Conducted</h2>
+        <div>
+            <img src="./assets/lpu_hkThon.png" alt="hackathon LPU">
+        </div>
+        <ul class="flex gap-4">
+            <button class="h-2 w-2 border-1 rounded-[50%] bg-slate-200 hover:bg-slate-300 shadow-2xl"></button>
+            <div class="h-2 w-2 rounded-[50%] bg-slate-200 hover:bg-slate-300 shadow-2xl"></div>
+            <button class="h-2 w-2 rounded-[50%] bg-slate-200 hover:bg-slate-300 shadow-2xl"></button>
+            <button class="h-2 w-2 rounded-[50%] bg-slate-200 hover:bg-slate-300 shadow-2xl"></button>
+            <button class="h-2 w-2 rounded-[50%] bg-slate-200 hover:bg-slate-300 shadow-2xl"></button>
+        </ul>
+    </section>
+    <!-- Hackathons Companys section -->
+    <section class="bg-[#eef0f5] mt-[5rem]">
+        <div class="flex flex-col mx-40 overflow-hidden items-center pt-[5rem]">
+            <h2 class="text-5xl font-bold text-blue-900 pb-8 my-6">Hackathon Companies</h2>
+        <ul class="flex justify-center gap-10 lg:gap-4 pt-16 mb-16 item">
+            <li class="h-14">
+                <img class="h-full" src="https://ineuron.ai/images/landing-page/hackathon/redis.png" alt="redit logo">
+            </li>
+            <li class="h-14">
+                <img class="h-full" src="https://ineuron.ai/images/landing-page/hackathon/github.png" alt="GitHub logo">
+            </li>
+            <li class="h-14">
+                <img class="h-full" src="https://ineuron.ai/images/landing-page/hackathon/jetbrains.png" alt="jetbrains logo">
+            </li>
+            <li class="h-14">
+                <img class="h-full" src="https://ineuron.ai/images/landing-page/hackathon/geekyants.png" alt="geekyants logo">
+            </li>
+            <li class="h-14">
+                <img class="h-full" src="https://ineuron.ai/images/landing-page/hackathon/musigma.png" alt="musigma">
+            </li>
+        </ul>
+        </div>
+    </section>
+    <!-- Our Products Section  -->
+    <section class="p-10">
+        <div class="flex flex-col mt-6 items-center mx-20">
+            <h2 class="text-5xl font-bold text-blue-900 px-4 mb-10">Our Products</h2>
+            <ul class="flex flex-wrap justify-center gap-12 mb-16">
+                <li class="flex flex-col w-80 p-4 g text-center items-center">
+                    <div class="pb-3">
+                        <img src="https://ineuron.ai/images/landing-page/products/neurolab-icon.svg" alt="">
+                    </div>
+                    <p class="text-2xl text-blue-900 font-bold mb-10">Neuron lab</p>
+                    <p class="text-lg pb-6">Supercharge your project development with our robust Lab.</p>
+                </li>
+                <li class="flex flex-col w-80 p-4 text-center items-center">
+                    <div class="pb-3">
+                        <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg" alt="">
+                    </div>
+                    <p class="text-2xl text-blue-900 font-bold mb-10">Job Portal</p>
+                    <p class="text-lg pb-6">Use exceptional templates for a stand-out resume minus the sign up proces</p>
+                </li>
+                <li class="flex flex-col w-80 p-4 text-center items-center">
+                    <div class="pb-3">
+                        <img src="https://ineuron.ai/images/landing-page/products/Internship-icon.svg" alt="">
+                    </div>
+                    <p class="text-2xl text-blue-900 font-bold mb-10">Internship Portal</p>
+                    <p class="text-lg pb-6">iNeuron's self-paced internship hands on training with 570+ internship projects</p>
+                </li>
+                <li class="flex flex-col w-80 p-4 text-center items-center">
+                    <div class="pb-3">
+                        <img src="https://ineuron.ai/images/landing-page/products/affilitatePortal-icon.svg" alt="">
+                    </div>
+                    <p class="text-2xl text-blue-900 font-bold mb-10">Become an affiliate</p>
+                    <p class="text-lg pb-6">Explore offiliate marketing with iNeuron and attain financial freedom</p>
+                </li>
+                <li class="flex flex-col w-80 p-4 text-center items-center">
+                    <div class="pb-3">
+                        <img src="https://ineuron.ai/images/landing-page/products/halloffame-icon.svg" alt="">
+                    </div>
+                    <p class="text-2xl text-blue-900 font-bold mb-10">Hall of fame</p>
+                    <p class="text-lg pb-6">Our student placements and 100K+ career transitions speak volumes about our courses.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Our Partnered Institutions -->
+    <section class="p-10">
+        <div class="flex flex-col mx-20 items-center">
+            <h2 class="text-5xl font-bold text-blue-900 px-4 mb-10">Our Partnered Institutions</h2>
+            <ul class="flex flex-row pt-10 mb-16 gap-10">
+                <li>
+                    <img class="h-40" src="https://ineuron.ai/images/landing-page/colleges/taxila.svg" alt="">
+                </li>
+                <li >
+                    <img class="h-40" src="https://ineuron.ai/images/landing-page/colleges/vit.svg" alt="">
+                </li>
+                <li >
+                    <img class="h-40" src="https://ineuron.ai/images/landing-page/colleges/keit.svg" alt="">
+                </li>
+                <li >
+                    <img class="h-40" src="https://ineuron.ai/images/landing-page/colleges/gim.svg" alt="">
+                </li>
+                <li >
+                    <img class="h-40" src="https://ineuron.ai/images/landing-page/colleges/malnad-college.svg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-[#233c7b] text-slate-200 mt-10 pt-10 px-20">
+        <div class="flex flex-wrap justify-between">
+            <div class="w-[20rem]">
+                <div class="mb-5">
+                    <img class="my-3" src="https://ineuron.ai/images/ineuron-logo-white.png" alt="">
+                    <ul class="flex mb-5">
+                        <a href="https://www.facebook.com/ineuronai">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="Footer_footer_social_icons__343g6" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"></path></g></svg>
+                        </a>
+                        <a href="https://twitter.com/iNeuronAi">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="Footer_footer_social_icons__343g6" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"></path></g></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/ineuron-ai/mycompany/">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="Footer_footer_social_icons__343g6" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill-rule="nonzero" d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"></path></g></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCb1GdqUqArXMQ3RS86lqqOw">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="Footer_footer_social_icons__343g6" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"></path></g></svg>
+                        </a>
+                        <a href="https://www.instagram.com/ineuron.ai/">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="Footer_footer_social_icons__343g6" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill-rule="nonzero" d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path></g></svg>
+                        </a>
+                        <a href="https://discord.gg/wyEAPaQEBN">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="Footer_footer_social_icons__343g6" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill-rule="nonzero" d="M10.076 11c.6 0 1.086.45 1.075 1 0 .55-.474 1-1.075 1C9.486 13 9 12.55 9 12s.475-1 1.076-1zm3.848 0c.601 0 1.076.45 1.076 1s-.475 1-1.076 1c-.59 0-1.075-.45-1.075-1s.474-1 1.075-1zm4.967-9C20.054 2 21 2.966 21 4.163V23l-2.211-1.995-1.245-1.176-1.317-1.25.546 1.943H5.109C3.946 20.522 3 19.556 3 18.359V4.163C3 2.966 3.946 2 5.109 2H18.89zm-3.97 13.713c2.273-.073 3.148-1.596 3.148-1.596 0-3.381-1.482-6.122-1.482-6.122-1.48-1.133-2.89-1.102-2.89-1.102l-.144.168c1.749.546 2.561 1.334 2.561 1.334a8.263 8.263 0 0 0-3.096-1.008 8.527 8.527 0 0 0-2.077.02c-.062 0-.114.011-.175.021-.36.032-1.235.168-2.335.662-.38.178-.607.305-.607.305s.854-.83 2.705-1.376l-.103-.126s-1.409-.031-2.89 1.103c0 0-1.481 2.74-1.481 6.121 0 0 .864 1.522 3.137 1.596 0 0 .38-.472.69-.871-1.307-.4-1.8-1.24-1.8-1.24s.102.074.287.179c.01.01.02.021.041.031.031.022.062.032.093.053.257.147.514.262.75.357.422.168.926.336 1.513.452a7.06 7.06 0 0 0 2.664.01 6.666 6.666 0 0 0 1.491-.451c.36-.137.761-.337 1.183-.62 0 0-.514.861-1.862 1.25.309.399.68.85.68.85z"></path></g></svg>
+                        </a>
+                    </ul>
+                    <hr class="border-orange-400 border-2"/>
+                </div>
+                <span class="flex gap-3 mb-5">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <p>17th Floor Tower A, Brigade Signature Towers, Sannatammanahalli, Bengaluru, Karnataka 562129.</p>
+                </span>
+                <span class="flex gap-3">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M477.5 536.3L135.9 270.7l-27.5-21.4 27.6 21.5V792h752V270.8L546.2 536.3a55.99 55.99 0 0 1-68.7 0z"></path><path d="M876.3 198.8l39.3 50.5-27.6 21.5 27.7-21.5-39.3-50.5z"></path><path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-94.5 72.1L512 482 190.5 232.1h643zm54.5 38.7V792H136V270.8l-27.6-21.5 27.5 21.4 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5h.1l39.3 50.5-27.7 21.5z"></path></svg>
+                    <p>Email us: contact@ineuron.ai</p>
+                </span>
+            </div>
+            <div class="w-[20rem]">
+                <div class="w-min">
+                    <h2 class="text-2xl font-bold mr-2">Company</h2>
+                    <hr class="border-orange-400 border-2 my-6"/>
+                </div>
+                <div class="flex flex-wrap justify-between">
+                    <!-- left List -->
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Job assistaance</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-4">
+                        <li>Contact us</li>
+                        <li>Hack-A-Thon</li>
+                        <li>Job guarantee</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-[20rem]">
+                <div class="w-min">
+                    <h2 class="text-2xl font-bold mr-2">Products</h2>
+                    <hr class="border-orange-400 border-2 my-6"/>
+                </div>
+                <ul class="flex flex-col gap-4">
+                    <li>Neuro Lab</li>
+                    <li>Job Portal</li>
+                    <li>Internship portal</li>
+                    <li>Become an affiliate</li>
+                    <li>Hall of fame</li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-6 text-center w-fit ml-0">
+            <img class="w-[5rem] pb-3" src="./assets/iso-9001-2015.svg" alt="">
+            <p class="my-3">ISO 9001</p>
+        </div>
+    </footer>
+</body>
+</html>
