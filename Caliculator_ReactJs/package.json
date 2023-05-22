@@ -4,7 +4,6 @@
   "description": "Caliculator App Using ReactJs",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel ./index.html"
   },
   "keywords": [

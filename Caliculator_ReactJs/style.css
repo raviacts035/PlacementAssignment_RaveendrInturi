@@ -3,29 +3,62 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Ultra', serif;
-    padding-top: 100px;
+    background: slategray;
+    color: #fff;
+}
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #ebd0ec;
 }
 
-button{
+/* Navigation Bar Styles  */
+#logo{
+    font-size: x-large;
+    border: 2px dashed black;
+    padding: 2px 40px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #e48e87;
+    margin-bottom: 50px;
+    padding: 20px 10%;
+}
+nav button{
+    border: 1px dotted #fff;
+    border-radius: 20px;
+    padding:3px 30px;
+    font-size: large;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+/* Caliculator Body Styles */
+#case button{
     padding: 10px;
-    box-shadow: 5px 5px 10px #0000001a, -5px -5px 20px #ffffff;
+    /* box-shadow: 5px 5px 10px #0000001a, -5px -5px 20px #ffffff; */
     margin: 10px;
     min-width:40px;
     font-family: 'Ultra', serif;
     font-size: 1.2em;
     color: #0c0c0c66;
     border:2px solid #edf1f4 ;
-    box-shadow: 5px 5px 10px #0000001a, -5px -5px 10px #fff;
     border-radius: 10px;
     cursor: pointer;
+    background-color: inherit;
+    color: inherit;
 }
 button:hover{
     box-shadow: inset 5px 5px 10px #0000001a,inset -5px -5px 10px #fff;
@@ -33,15 +66,22 @@ button:hover{
 }
 #case{
     
-    background-color: #c9cbcc;
+    background-color: lightblue;
+    color: #000000;
     margin-top: 2%;
     width: 340px;
     padding: 20px;
     border-radius: 20px;    
 }
 
-#Ac,#C{
+#pad>#Ac,#pad>#C{
     background-color: #e48e87;
+    color: #fff;
+    min-width:100px;
+    border: 2px solid #edf1f4;
+}
+#pad>#Equal{
+    background-color: #5e26e1;
     color: #fff;
     min-width:100px;
     border: 2px solid #edf1f4;
@@ -62,7 +102,6 @@ button:hover{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #d7bfbf;
     padding: 10px;
     border-radius: 10px;
 }
