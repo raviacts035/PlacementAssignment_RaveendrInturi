@@ -1,0 +1,23 @@
+{
+  "name": "taskmanager_reactjs16",
+  "version": "1.0.0",
+  "description": "Task Manager Using ReactJs with CRUD functionalities",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx parcel ./index.html"
+  },
+  "keywords": [
+    "Task-Manager",
+    "ReactJs",
+    "Js",
+    "CRUD"
+  ],
+  "author": "Raveendra Inturi",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  }
+}
