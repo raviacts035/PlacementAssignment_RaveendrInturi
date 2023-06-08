@@ -1,4 +1,2 @@
-# HTML only Resume 
-
-> FSJS 2.0, pre-Placement Interview based Assignment 
-Question-4 solution
+# Interview Based Assignment | FSJS 2.0
+Question-4 : HTML only Resume 
